@@ -27,7 +27,7 @@ const Navbar = () => {
                     </ul>
                 </div>
               <div className="flex items-center">
-                  <img src="https://cdn-icons-png.flaticon.com/512/2779/2779837.png" className='w-12' alt="" />
+                  
               <Link to="/"> <li className="__logo  btn btn-ghost normal-case text-xl tracking-wider hover:text-white font-bold">ALAPOTTRA</li></Link>
               </div>
             </div>
