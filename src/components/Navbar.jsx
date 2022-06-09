@@ -7,6 +7,7 @@ const Navbar = () => {
     const menuItems =
         <>
             <li className="hover:text-white" ><Link  to="/">Home</Link></li>
+            <li className="hover:text-white" ><Link  to="/">About</Link></li>
             <li className="hover:text-white" ><Link  to="/">Projects</Link></li>
             <li className="hover:text-white" ><Link  to="/">Contact</Link></li>
         </>
