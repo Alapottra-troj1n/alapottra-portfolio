@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import {motion} from 'framer-motion'
+import Blogs from './components/Blogs';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -60,6 +61,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home setCursorVariant={setCursorVariant} />}></Route>
+        <Route path="/blogs" element={<Blogs />}></Route>
       </Routes>
       <Footer/>
  
