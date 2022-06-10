@@ -11,7 +11,13 @@ const Projects = () => {
         img: 'https://i.ibb.co/qRvp3CP/Capture.png',
         des : 'A Full-Stack inventory management website specializes in managing furniture.',
         livelink : 'https://furnitano.web.app/',
-        github : 'https://github.com/Alapottra-troj1n/furnitano-client'
+        github : 'https://github.com/Alapottra-troj1n/furnitano-client',
+        
+        points : ['User friendly authentication, password retrieval system, dynamic and protected routing',
+                  ' CRUD functionality users will be able to add, remove, edit and manage products',
+                  'Users will be able to deliver, restock and also view their own products on My Inventory'
+        ],
+        techUsed : ['React.js', 'Tailwind CSS', 'Firebase', 'React Query', 'Express.js', 'Mongodb', 'Stripe.js']
 
     }
 
@@ -20,7 +26,12 @@ const Projects = () => {
         des : 'A Full-Stack Project with Stripe payment gateway integration and admin features.',
         img: 'https://i.ibb.co/FmqHhP9/Capture2.png',
         livelink : 'https://ignition-6cdd3.web.app/',
-        github : 'https://github.com/Alapottra-troj1n/ignition-client'
+        github : 'https://github.com/Alapottra-troj1n/ignition-client',
+        points : ['Stripe Payment gateway integration with Dynamic UI',
+        ' Protected and Private routing for users and admins with JWT and React Router',
+        'Admin specific features and routes that can manage all orders and products'
+        ],
+        techUsed : ['React.js', 'Tailwind CSS', 'Firebase', 'React Query', 'Express.js', 'Mongodb', 'Stripe.js']
 
     }
 
@@ -29,7 +40,9 @@ const Projects = () => {
         des : 'A Modern Dashboard UI with React and Recharts',
         img: 'https://i.ibb.co/DYDpHFN/Capture3.png',
         livelink : 'https://analytical-dashboard.netlify.app/',
-        github : 'https://github.com/Alapottra-troj1n/analytical-dashboard-react'
+        github : 'https://github.com/Alapottra-troj1n/analytical-dashboard-react',
+        points : ['Modern Dashboard design cloned from a Figma design', 'Different kinds of custom designed charts showing different data', 'Implemented recharts'],
+        techUsed: ['React.js', 'Recharts', 'React Router', 'Daisy UI', 'Tailwind CSS']
 
     }
 
