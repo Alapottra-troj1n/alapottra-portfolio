@@ -1,6 +1,7 @@
 import React from 'react';
 import contactImg from '../assets/Saly-6.png';
 import emailjs from '@emailjs/browser';
+import { FaPhoneAlt,FaEnvelope,FaLocationArrow } from "react-icons/fa";
 
 const Contact = () => {
 
@@ -23,12 +24,33 @@ const Contact = () => {
 
 
     return (
-        <div className="mt-16 flex  flex-col justify-center items-center">
-            <h2 className="text-3xl lg:text-5xl mb-10 font-bold text-white" >Contact</h2>
+        <div id='contact' className="mt-16 flex  flex-col justify-center items-center">
+            <h2 className="text-3xl lg:text-5xl mb-10 font-bold text-white">Contact</h2>
+     
 
             <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="flex justify-center">
-                    <img src={contactImg} className="w-3/4" alt="" />
+                <div className="flex flex-col lg:flex-row-reverse items-center justify-center">
+                <div className="flex flex-col gap-3">
+                    <div className="flex items-center gap-3" >
+                    <FaPhoneAlt className='text-lg' /> 
+                    <h2>+8801846659808</h2>      
+                    </div>
+                    <div className="flex items-center gap-3" >
+                    <FaEnvelope className='text-lg' /> 
+                    <h2>alapottrachakma2001@gmail.com</h2>      
+                    </div>
+                    <div className="flex items-center gap-3" >
+                    <FaLocationArrow className='text-lg' /> 
+                    <h2>Rangamati, Bangladesh</h2>      
+                    </div>
+
+                 </div>
+               
+                    <img src={contactImg} className="w-2/4" alt="" />
+
+                    
+                    
+                    
                 </div>
 
                 <div className="flex items-center justify-center lg:justify-start  p-10">

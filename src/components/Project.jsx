@@ -10,8 +10,8 @@ const Project = ({project}) => {
                 <h2 class="card-title text-white">{project.name}</h2>
                 <p>{project.des}</p>
                 <div class="card-actions justify-center">
-                    <a href={project.livelink}><FaExternalLinkAlt className="text-white mx-2 hover:text-secondary text-lg"/></a>
-                    <a href={project.github}><FaGithub className="text-white mx-2 hover:text-secondary text-lg"/></a>
+                    <a href={project.livelink}><FaExternalLinkAlt className="text-white mx-2 hover:text-secondary text-xl cursor-pointer"/></a>
+                    <a href={project.github}><FaGithub className="text-white mx-2 hover:text-secondary text-xl cursor-pointer"/></a>
                     
                 </div>
             </div>

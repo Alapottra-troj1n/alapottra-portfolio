@@ -4,10 +4,10 @@ import Contact from './Contact';
 import HeroSection from './HeroSection';
 import Projects from './Projects';
 
-const Home = () => {
+const Home = ({setCursorVariant}) => {
     return (
         <div className=" container mx-auto flex flex-col justify-center items-center">
-            <HeroSection/>
+            <HeroSection setCursorVariant={setCursorVariant} />
             <About/>
             <Projects/>
             <Contact/>

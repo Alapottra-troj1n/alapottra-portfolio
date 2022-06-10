@@ -37,13 +37,11 @@ const Projects = () => {
         <div className="mt-16 flex  flex-col justify-center items-center" >
             <h2 className="text-3xl lg:text-5xl mb-10 font-bold text-white" >My Projects</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div id="projects" className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
             <Project project={project1} />
             <Project project={project2} />
-            <Project project={project3} />
-           
-
+            <Project project={project3} /> 
 
             </div>
         </div>
