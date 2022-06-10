@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import DetailsModal from './DetailsModal';
 import Project from './Project';
 
 const Projects = () => {
+
+    const [detailsModal, setDetailsModal] = useState('');
+
     const project1 = {
         name : 'Furnitano',
         img: 'https://i.ibb.co/qRvp3CP/Capture.png',
@@ -35,15 +39,18 @@ const Projects = () => {
 
     return (
         <div className="mt-16 flex  flex-col justify-center items-center" >
+             {detailsModal && <DetailsModal setDetailsModal={setDetailsModal} detailsModal={detailsModal} />}
             <h2 className="text-3xl lg:text-5xl mb-10 font-bold text-white" >My Projects</h2>
 
             <div id="projects" className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                
 
-            <Project project={project1} />
-            <Project project={project2} />
-            <Project project={project3} /> 
+            <Project setDetailsModal={setDetailsModal} project={project1} />
+            <Project setDetailsModal={setDetailsModal} project={project2} />
+            <Project setDetailsModal={setDetailsModal} project={project3} /> 
 
             </div>
+           
         </div>
     );
 };

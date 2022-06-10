@@ -12,9 +12,11 @@ function App() {
     y:0
   });
 
-  const [cursorVariant, setCursorVariant] = useState('default')
+  const [cursorVariant, setCursorVariant] = useState('default');
+ 
 
   useEffect(() =>{
+
 
     const mouseMove = (e) => {
       setMousePosition({

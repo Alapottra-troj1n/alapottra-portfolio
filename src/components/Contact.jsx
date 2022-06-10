@@ -60,7 +60,7 @@ const Contact = () => {
                                 <input type="email" name='email' placeholder="Email" class="input input-bordered bg-white w-full" />
                                 <input type="text" name='subject' placeholder="Subject" class="input input-bordered bg-white w-full " />
                                 <textarea type="text" name='message' placeholder="Message" class="input input-bordered bg-white h-28 w-full" />
-                                <input type="submit"  value="SUBMIT" className='btn hover:bg-secondary border-0 text-white mt-2' />
+                                <input type="submit"  value="SUBMIT" className='btn hover:bg-yellow-400 border-0 text-white mt-2' />
                             </form>
                         </div>
                     </div>
