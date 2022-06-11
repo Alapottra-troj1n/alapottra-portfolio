@@ -7,10 +7,10 @@ const Navbar = () => {
     const menuItems =
         <>
             <li className="hover:text-white" ><Link  to="/">Home</Link></li>
-            <li className="hover:text-white" ><a  href="#about">About</a></li>
-            <li className="hover:text-white" ><a  href="#projects">Projects</a></li>
+            <li className="hover:text-white" ><a  href="/#about">About</a></li>
+            <li className="hover:text-white" ><a  href="/#projects">Projects</a></li>
             <li className="hover:text-white" ><Link  to="/blogs">Blog</Link></li>
-            <li className="hover:text-white" ><a  href="#contact">Contact</a></li>
+            <li className="hover:text-white" ><a  href="/#contact">Contact</a></li>
             
         </>
 

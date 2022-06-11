@@ -46,17 +46,29 @@ function App() {
       width: 150,
       x:mousePosition.x - 75,
       y: mousePosition.y - 75,
-      mixBlendMode: 'difference'
+      mixBlendMode: 'difference',
+      
+    },
+
+    onModal:{
+      x:mousePosition.x -16,
+      y: mousePosition.y -16,
+      backgroundColor: 'rgb(250 204 21)',
+     
     }
+
+
+
+
   }
 
 
   return (
     <div className="App">
-      <motion.div 
+      <motion.div className="cursor hidden lg:block" 
       variants={variants}
       animate={cursorVariant}
-      className='cursor'></motion.div>
+      ></motion.div>
 
       <Navbar/>
       <Routes>

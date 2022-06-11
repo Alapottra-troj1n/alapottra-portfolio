@@ -8,6 +8,7 @@ import './Home.css'
 import Spinner from './Spinner';
 
 const Home = ({setCursorVariant}) => {
+
     const [loading,setLoading] = useState(true);
 
     
@@ -16,10 +17,11 @@ const Home = ({setCursorVariant}) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-      },1000);
+      },500);
 
       return ()=> clearTimeout(timer);
     },[]);
+
 
     if(loading) {
             return <Spinner/>
@@ -27,8 +29,8 @@ const Home = ({setCursorVariant}) => {
     return (
         <div className=" container mx-auto flex flex-col justify-center items-center">
             <HeroSection setCursorVariant={setCursorVariant} />
-            <About/>
-            <Projects  />
+            <About setCursorVariant={setCursorVariant} />
+            <Projects setCursorVariant={setCursorVariant}  />
             <Contact/>
         </div>
     );

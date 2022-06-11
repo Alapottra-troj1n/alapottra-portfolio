@@ -1,7 +1,12 @@
 import React from 'react';
 import { FaEye, FaGithub } from "react-icons/fa";
+import { motion } from 'framer-motion'
 
-const DetailsModal = ({ detailsModal, setDetailsModal }) => {
+const DetailsModal = ({ detailsModal, setDetailsModal,setCursorVariant }) => {
+
+    const textEnter = () => setCursorVariant('onModal');
+    const textLeave = () => setCursorVariant('default');
+    
 
     const handleBack = () => {
         setDetailsModal('')
@@ -10,14 +15,14 @@ const DetailsModal = ({ detailsModal, setDetailsModal }) => {
 
     return (
         <>
-            <input type="checkbox" id="details-modal" className="modal-toggle" />
+            <input  type="checkbox" id="details-modal" className="modal-toggle" />
 
-            <div className="modal modal-middle sm:modal-middle">
+            <div    onMouseEnter={textEnter} onMouseLeave={textLeave} className="modal modal-middle sm:modal-middle">
 
 
-                <div className="modal-box bg-white text-gray-700">
-                    <div className="my-5">
-                        <img src={detailsModal.img} className="rounded-xl" alt="" />
+                <motion.div initial={{scale: 0 }} animate={{scale: 1 }} className="modal-box bg-gray-100 text-gray-700">
+                    <div className="my-5 h-64 overflow-hidden rounded-xl">
+                        <img src={detailsModal?.longImg} className=" hover:-translate-y-3/4 transition duration-1000 ease-linear" alt="" />
                     </div>
 
 
@@ -47,7 +52,7 @@ const DetailsModal = ({ detailsModal, setDetailsModal }) => {
                     </div>
 
 
-                </div>
+                </motion.div>
             </div>
         </>
     );
