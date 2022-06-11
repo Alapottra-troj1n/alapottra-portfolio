@@ -20,7 +20,7 @@ const DetailsModal = ({ detailsModal, setDetailsModal,setCursorVariant }) => {
             <div    onMouseEnter={textEnter} onMouseLeave={textLeave} className="modal modal-middle sm:modal-middle">
 
 
-                <motion.div initial={{scale: 0 }} animate={{scale: 1 }} className="modal-box bg-gray-100 text-gray-700">
+                <div className="modal-box bg-gray-100 text-gray-700">
                     <div className="my-5 h-64 overflow-hidden rounded-xl">
                         <img src={detailsModal?.longImg} className=" hover:-translate-y-3/4 transition duration-1000 ease-linear" alt="" />
                     </div>
@@ -52,7 +52,7 @@ const DetailsModal = ({ detailsModal, setDetailsModal,setCursorVariant }) => {
                     </div>
 
 
-                </motion.div>
+                </div>
             </div>
         </>
     );

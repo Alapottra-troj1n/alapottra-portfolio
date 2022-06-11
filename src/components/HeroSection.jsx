@@ -30,7 +30,7 @@ const HeroSection = ({ setCursorVariant }) => {
 
 
         <motion.img initial={{ y: 1000 }} animate={{ y: 0 }} transition={{
-
+          delay : .5,
           type: "spring",
           stiffness: 260,
           damping: 20, ease: "easeOut"
